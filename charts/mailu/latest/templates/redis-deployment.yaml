@@ -1,0 +1,65 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert -c
+    kompose.version: 1.1.0 (36652f6)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: redis
+  name: redis
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: redis
+    spec:
+      containers:
+      - env:
+        - name: ADMIN
+        - name: ANTIVIRUS
+        - name: AUTH_RATELIMIT
+        - name: BIND_ADDRESS4
+        - name: BIND_ADDRESS6
+        - name: COMPOSE_PROJECT_NAME
+        - name: DISABLE_STATISTICS
+        - name: DMARC_RUA
+        - name: DMARC_RUF
+        - name: DOMAIN
+        - name: FETCHMAIL_DELAY
+        - name: HOSTNAMES
+        - name: MESSAGE_SIZE_LIMIT
+        - name: PASSWORD_SCHEME
+        - name: POSTMASTER
+        - name: RECIPIENT_DELIMITER
+        - name: RELAYHOST
+        - name: RELAYNETS
+        - name: ROOT
+        - name: SECRET_KEY
+        - name: SITENAME
+        - name: TLS_FLAVOR
+        - name: VERSION
+        - name: WEBDAV
+        - name: WEBMAIL
+        - name: WEBSITE
+        - name: WEB_ADMIN
+        - name: WEB_WEBMAIL
+        - name: WELCOME
+        - name: WELCOME_BODY
+        - name: WELCOME_SUBJECT
+        image: redis:alpine
+        name: redis
+        resources: {}
+        volumeMounts:
+        - mountPath: /data
+          name: redis-claim0
+      restartPolicy: Always
+      volumes:
+      - name: redis-claim0
+        persistentVolumeClaim:
+          claimName: redis-claim0
+status: {}
