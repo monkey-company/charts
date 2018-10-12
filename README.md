@@ -16,3 +16,7 @@ helm search monkey-catalog
 ```
 
 Enjoy !
+
+## List of apps
+
+- Mailu
