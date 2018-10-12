@@ -1,7 +1,15 @@
-name: docker-compose
-description: A generated Helm Chart for docker-compose from Skippbox Kompose
-version: 0.0.1
+apiVersion: v1
+name: mailu
+version: 1.0.0
+appVersion: v1.0.0
+description: Set this to the path where Mailu data and configuration is stored.
+icon: https://mailu.io/_images/logo.png
 keywords:
-  - docker-compose
+- mail
+- mailu
+home: https://mailu.io/
 sources:
-home:
+- https://github.com/Mailu/Mailu
+maintainers:
+- name: monkey-company
+  email: contact@themonkey.co
