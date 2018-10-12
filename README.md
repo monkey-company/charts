@@ -10,7 +10,6 @@ Forked from rancher/charts for Rancher 2.x - Custom catalog
 ![GitHub last commit](https://img.shields.io/github/last-commit/monkey-company/charts.svg)
 [![GitHub release](https://img.shields.io/github/release/monkey-company/charts.svg)](https://github.com/monkey-company/charts/releases/latest)
 ![GitHub repo size in bytes](https://img.shields.io/github/repo-size/monkey-company/charts.svg)
-![GitHub language count](https://img.shields.io/github/languages/count/monkey-company/charts.svg)
 
 ## Add Catalog in Rancher 2.x
 
