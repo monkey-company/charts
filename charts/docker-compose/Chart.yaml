@@ -1,7 +1,4 @@
-apiVersion: v1
 name: mailu
-version: 1.0.0
-appVersion: v1.0.0
 description: Set this to the path where Mailu data and configuration is stored.
 icon: https://mailu.io/_images/logo.png
 keywords:
