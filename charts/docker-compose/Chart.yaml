@@ -1,6 +1,7 @@
 name: mailu
 description: Set this to the path where Mailu data and configuration is stored.
 icon: https://mailu.io/_images/logo.png
+version: 0.0.1
 keywords:
 - mail
 - mailu
