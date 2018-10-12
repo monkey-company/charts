@@ -1,4 +1,6 @@
 # Monkey Catalog
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmonkey-company%2Fcharts.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmonkey-company%2Fcharts?ref=badge_shield)
+
 
 Forked from rancher/charts for Rancher 2.x
 
@@ -20,3 +22,7 @@ Enjoy !
 ## List of apps
 
 - Mailu
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmonkey-company%2Fcharts.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmonkey-company%2Fcharts?ref=badge_large)
