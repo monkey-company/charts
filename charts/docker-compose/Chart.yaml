@@ -1,4 +1,4 @@
-name: mailu
+name: docker-compose
 description: Set this to the path where Mailu data and configuration is stored.
 icon: https://mailu.io/_images/logo.png
 version: 0.0.1
