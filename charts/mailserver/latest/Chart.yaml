@@ -1,0 +1,15 @@
+apiVersion: v1
+name: mailserver
+version: 1.0.0
+appVersion: v1.0.0
+description: Simple and full-featured mail server using Docker
+icon: https://image.flaticon.com/icons/svg/214/214316.svg
+keywords:
+- mail
+- mailserver
+home: https://keybase.io/hardware
+sources:
+- https://github.com/hardware/mailserver
+maintainers:
+- name: monkey-company
+  email: contact@themonkey.co

@@ -1,0 +1,37 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert -c --file docker-compose.sample.yml
+    kompose.version: 1.1.0 (36652f6)
+    traefik.docker.network: http_network
+    traefik.enable: "true"
+    traefik.frontend.rule: Host:webmail.
+    traefik.port: "8888"
+  creationTimestamp: null
+  labels:
+    io.kompose.service: rainloop
+  name: rainloop
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: rainloop
+    spec:
+      containers:
+      - image: hardware/rainloop
+        name: rainloop
+        resources: {}
+        volumeMounts:
+        - mountPath: /rainloop/data
+          name: rainloop-claim0
+      restartPolicy: Always
+      volumes:
+      - name: rainloop-claim0
+        persistentVolumeClaim:
+          claimName: rainloop-claim0
+status: {}

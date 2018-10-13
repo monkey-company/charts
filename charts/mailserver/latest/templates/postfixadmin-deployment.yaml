@@ -1,0 +1,31 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert -c --file docker-compose.sample.yml
+    kompose.version: 1.1.0 (36652f6)
+    traefik.docker.network: http_network
+    traefik.enable: "true"
+    traefik.frontend.rule: Host:postfixadmin.
+    traefik.port: "8888"
+  creationTimestamp: null
+  labels:
+    io.kompose.service: postfixadmin
+  name: postfixadmin
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: postfixadmin
+    spec:
+      containers:
+      - env:
+        - name: DBPASS
+        image: hardware/postfixadmin
+        name: postfixadmin
+        resources: {}
+      restartPolicy: Always
+status: {}
