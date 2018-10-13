@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   creationTimestamp: null
   labels:
-    io.kompose.service: webdav-claim0
+    app: webdav-claim0
   name: webdav-claim0
 spec:
   accessModes:

@@ -6,7 +6,7 @@ metadata:
     kompose.version: 1.1.0 (36652f6)
   creationTimestamp: null
   labels:
-    io.kompose.service: admin
+    app: admin
   name: admin
 spec:
   replicas: 1
@@ -16,7 +16,7 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        io.kompose.service: admin
+        app: admin
     spec:
       containers:
       - env:

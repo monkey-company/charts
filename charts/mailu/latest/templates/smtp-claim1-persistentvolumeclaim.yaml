@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   creationTimestamp: null
   labels:
-    io.kompose.service: smtp-claim1
+    app: smtp-claim1
   name: smtp-claim1
 spec:
   accessModes:
