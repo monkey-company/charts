@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   creationTimestamp: null
   labels:
-    app: antivirus-claim0
+    io.kompose.service: antivirus-claim0
   name: antivirus-claim0
 spec:
   accessModes:

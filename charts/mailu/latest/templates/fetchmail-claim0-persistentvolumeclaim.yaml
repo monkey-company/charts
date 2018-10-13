@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   creationTimestamp: null
   labels:
-    app: fetchmail-claim0
+    io.kompose.service: fetchmail-claim0
   name: fetchmail-claim0
 spec:
   accessModes:

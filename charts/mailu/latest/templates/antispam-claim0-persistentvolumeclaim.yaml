@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   creationTimestamp: null
   labels:
-    app: antispam-claim0
+    io.kompose.service: antispam-claim0
   name: antispam-claim0
 spec:
   accessModes:

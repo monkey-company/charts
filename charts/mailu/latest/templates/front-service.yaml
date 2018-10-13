@@ -6,7 +6,7 @@ metadata:
     kompose.version: 1.1.0 (36652f6)
   creationTimestamp: null
   labels:
-    app: front
+    io.kompose.service: front
   name: front
 spec:
   ports:
@@ -38,6 +38,6 @@ spec:
     port: 587
     targetPort: 587
   selector:
-    app: front
+    io.kompose.service: front
 status:
   loadBalancer: {}

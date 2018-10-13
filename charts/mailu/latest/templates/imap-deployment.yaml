@@ -6,7 +6,7 @@ metadata:
     kompose.version: 1.1.0 (36652f6)
   creationTimestamp: null
   labels:
-    app: imap
+    io.kompose.service: imap
   name: imap
 spec:
   replicas: 1
@@ -16,7 +16,7 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        app: imap
+        io.kompose.service: imap
     spec:
       containers:
       - env:
